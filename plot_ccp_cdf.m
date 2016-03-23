@@ -1,6 +1,6 @@
 function [edf_res, t_res] = plot_ccp_cdf(resStruct,color)
-%PLOT_CCP_CDF Summary of this function goes here
-%   Detailed explanation goes here
+% plot_ccp_cdf prints a graph of the cumulative lifetime distribution of
+% the passed resStruct, in the desired color.
 
 summedHist = sum(resStruct.lftRes.lftHist_total);
 summedHist = summedHist/sum(summedHist);
